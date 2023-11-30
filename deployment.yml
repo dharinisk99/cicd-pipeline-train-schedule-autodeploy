@@ -1,37 +1,19 @@
 apiVersion: apps/v1
-
 kind: Deployment
-
 metadata:
-
   name: CI_CD_app
-
 spec:
-
   replicas: 3
-
   selector:
-
     matchLabels:
-
       app: CI_CD_app
-
   template:
-
     metadata:
-
       labels:
-
         app: CI_CD_app
-
     spec:
-
       containers:
-
       - name: CI_CD_app
-
         image: dharinisk/image123:latest
-
         ports:
-
         - containerPort: 79
