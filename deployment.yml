@@ -4,7 +4,7 @@ kind: Deployment
 
 metadata:
 
-  name: your-app
+  name: CI_CD_app
 
 spec:
 
@@ -14,7 +14,7 @@ spec:
 
     matchLabels:
 
-      app: your-app
+      app: CI_CD_app
 
   template:
 
@@ -22,13 +22,13 @@ spec:
 
       labels:
 
-        app: your-app
+        app: CI_CD_app
 
     spec:
 
       containers:
 
-      - name: your-app
+      - name: CI_CD_app
 
         image: dharinisk/image123:latest
 
